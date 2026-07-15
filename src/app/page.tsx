@@ -15,7 +15,7 @@ import { ProductList } from "@/components/shop/product-list"
 function Hero() {
   const { status, user } = useAuth()
   const { settings } = useSettings()
-  const siteName = settings?.site.name ?? "Zuka"
+  const siteName = settings?.site.name ?? "ZUKA"
   const siteDescription =
     settings?.site.description?.trim() ||
     "เลือกซื้อสินค้าที่คุณต้องการ ชำระเงินด้วยเครดิตในบัญชี และรับสินค้าได้ทันทีอย่างปลอดภัย"
@@ -86,7 +86,7 @@ export default function Page() {
             <div>
               <h2 className="text-base font-semibold tracking-tight">สินค้าแนะนำ</h2>
               <p className="text-xs text-muted-foreground">
-                สินค้าล่าสุดจากร้าน Zuka
+                สินค้าล่าสุดจากทางร้าน
               </p>
             </div>
             <Button variant="outline" size="sm" render={<Link href="/products" />}>
